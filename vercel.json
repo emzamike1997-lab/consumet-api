@@ -1,6 +1,8 @@
 {
-    "rewrites": [{
-        "source": "/(.*)",
-        "destination": "/src/main.ts"
-    }]
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "**"
+    }
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
 }
